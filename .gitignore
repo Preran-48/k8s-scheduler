@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+
+# Kubernetes temporary files
+*.tmp
+
+# Minikube artifacts
+.minikube/
+
+# Logs
+*.log
