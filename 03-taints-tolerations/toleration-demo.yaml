@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: toleration-demo
+
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: minikube-m03
+
+  tolerations:
+  - key: "env"
+    operator: "Equal"
+    value: "prod"
+    effect: "NoSchedule"
+
+  containers:
+  - name: nginx
+    image: nginx

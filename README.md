@@ -6,7 +6,7 @@ Hands-on labs for learning Kubernetes scheduling concepts using Minikube.
 
 * [x] Node Selector
 * [x] Node Affinity
-* [ ] Taints and Tolerations
+* [x] Taints and Tolerations
 * [ ] Pod Affinity
 * [ ] Pod Anti-Affinity
 
@@ -68,6 +68,9 @@ k8s-scheduler/
 │   ├── node-affinity-preferred.yaml
 │   └── node-affinity-operators.yaml
 ├── 03-taints-tolerations/
+│   ├── README.md
+│   ├── no-toleration-demo.yaml
+│   └── toleration-demo.yaml
 ├── 04-pod-affinity/
 └── 05-pod-anti-affinity/
 ```
@@ -91,7 +94,9 @@ Verify your setup:
 
 ```bash
 minikube version
+
 kubectl version --client
+
 docker version
 ```
 
